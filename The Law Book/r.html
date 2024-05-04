@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indian Penal Code</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        overflow-y: auto; /* Adding scrollbar for overflow */
+        height: 100vh; /* Making the container full height of viewport */
+    }
+    header {
+        background-color: #4e4f50;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        color: #fff;
+        padding: 15px 20px;
+        text-align: center;
+    }
+    input[type="search"] {
+        width: calc(100% - 5px);
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+    }
+    #textToSearch {
+        background-color: #fff;
+        padding: 20px;
+        font-size: 17px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .highlight {
+        background-color: yellow;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .search-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .search-button:hover {
+        background-color: #555;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Indian Penal Code</h1>
+</header>
+<div class="container">
+    <input type="search" id="searchInput" placeholder="Search sections...">
+    <button id="searchButton" class="search-button">Search</button>
+    <div id="textToSearch">
+        <p>SECTIONS</p>
+        <p>1. Title and extent of operation of the Code.</p>
+        <p>2. Punishment of offences committed within India.</p>
+        <p>3. Punishment of offences committed beyond, but which by law may be tried within, India.</p>
+        <p>4. Extension of Code to extra-territorial offences.</p>
+        <p>5. Certain laws not to be affected by this Act.</p>
+        <p>CHAPTER II</p>
+        <p>GENERAL EXPLANATIONS</p>
+        <p>6. Definitions in the Code to be understood subject to exceptions.</p>
+        <p>7. Sense of expression once explained.</p>
+        <p>8. Gender.</p>
+        <p>9. Number.</p>
+        <p>10. “Man”. “Woman”.</p>
+        <p>11. “Person”.</p>
+        <p>12. “Public”.</p>
+        <p>13. [Omitted.].</p>
+        <p>14. “Servant of Government”.</p>
+        <p>15. [Repealed.].</p>
+        <p>16. [Repealed.].</p>
+        <p>17. “Government”.</p>
+        <p>18. “India”.</p>
+        <p>19. “Judge”.</p>
+        <p>20. “Court of Justice”.</p>
+        <p>21. “Public servant”.</p>
+        <p>22. “Moveable property”.</p>
+        <p>23. “Wrongful gain”.<br> “Wrongful loss”.<br> Gaining wrongfully/ Losing wrongfully.</p>
+        <p>24. “Dishonestly”.</p>
+        <p>25. “Fraudulently”.</p>
+        <p>26. “Reason to believe”.</p>
+        <p>27. Property in possession of wife, clerk or servant.</p>
+        <p>28. “Counterfeit”.</p>
+        <p>29. “Document”.</p>
+        <p>29A. “Electronic record”.</p>
+        <p>30. “Valuable security”.</p>
+        <p>31. “A will”.</p>
+        <p>32. Words referring to acts include illegal omissions.</p>
+        <p>33. “Act”.<br> “Omission”.</p>
+        <p>34. Acts done by several persons in furtherance of common intention.</p>
+        <p>35. When such an act is criminal by reason of its being done with a criminal knowledge or intention.</p>
+        <p>36. Effect caused partly by act and partly by omission.</p>
+        <p>37. Co-operation by doing one of several acts constituting an offence.</p>
+        <p>2</p>
+        <p>SECTIONS</p>
+        <p>38. Persons concerned in criminal act may be guilty of different offences.</p>
+        <p>39. “Voluntarily”.</p>
+        <p>40. “Offence”.</p>
+        <p>41. “Special law”.</p>
+        <p>42. “Local law”.</p>
+        <p>43. “Illegal”.<br> “Legally bound to do”.</p>
+        <p>44. “Injury”.</p>
+        <p>45. “Life”.</p>
+        <p>46. “Death”.</p>
+        <p>47. “Animal”.</p>
+        <p>48. “Vessel”.</p>
+        <p>49. “Year”.<br> “Month”.</p>
+        <p>50. “Section”.</p>
+        <p>51. “Oath”.</p>
+        <p>52. “Good faith”</p>
+        <p>52A. “Harbour-“</p>
+        <p>CHAPTER III</p>
+        <p>OF PUNISHMENTS</p>
+        <p>53. Punishments.<br> 53A. Construction of reference to transportation.</p>
+        <p>54. Commutation of sentence of death.</p>
+        <p>55. Commutation of sentence of imprisonment for life.</p>
+        <p>55A. Definition of "appropriate Government".</p>
+        <p>56. [Repealed.].</p>
+        <p>57. Fractions of terms of punishment.</p>
+        <p>58. [Repealed.].</p>
+        <p>59. [Repealed.].</p>
+        <p>60. Sentence may be (in certain cases of imprisonment) wholly or partly rigorous of simple.</p>
+        <p>61. [Repealed.].</p>
+        <p>62. [Repealed.].</p>
+        <p>63. Amount of fine.</p>
+        <p>64. Sentence of imprisonment for non-payment of fine.</p>
+        <p>65. Limit to imprisonment for non-payment of fine, when imprisonment and fine awardable.</p>
+        <p>66. Description of imprisonment for non-payment of fine.</p>
+        <p>67. Imprisonment for non-payment of fine, when offence punishable with fine only.</p>
+        <p>68. Imprisonment to terminate on payment of fine.</p>
+        <p>69. Termination of imprisonment on payment of proportional part of fine.</p>
+        <p>70. Fine leviable within six years, of during imprisonment. Death not to discharge property from liability.</p>
+        <p>71. Limit of punishment of offence made up of several offences.</p>
+        <p>72. Punishment of person guilty of one of several offences, the judgment stating that is doubtful of which.</p>
+        <p>73. Solitary confinement.</p>
+        <p>74. Limit of solitary confinement.</p>
+        <p>75. Enhanced punishment for certain offences under Chapter XII or Chapter XVII after previous conviction.</p>
+        <p>CHAPTER IV</p>
+        <p>GENERAL EXCEPTIONS</p>
+        <p>76. Act done by a person bound, or by mistake of fact believing himself bound, by law.</p>
+        <p>77. Act of Judge when acting judicially.</p>
+        <p>78. Act done pursuant to the judgment or order of Court.</p>
+        <p>79. Act done by a person justified, or by mistake of fact believing himself justified, by law.</p>
+        <p>80. Accident in doing a lawful act.</p>
+        <p>81. Act likely to cause harm, but done without criminal intent, and to prevent other harm.</p>
+        <p>3</p>
+        <p>SECTIONS</p>
+        <p>82. Act of a child under seven years of age.</p>
+        <p>83. Act of a child above seven and under twelve of immature understanding.</p>
+        <p>84. Act of a person of unsound mind.</p>
+        <p>85. Act of a person incapable of judgment by reason of intoxication caused against his will.</p>
+        <p>86. Offence requiring a particular intent or knowledge committed by one who is intoxicated.</p>
+        <p>87. Act not intended and not known to be likely to cause death or grievous hurt, done by consent.</p>
+        <p>88. Act not intended to cause death, done by consent in good faith for person's benefit.</p>
+        <p>89. Act done in good faith for benefit of child or insane person, by or by consent of guardian.</p>
+        <p>Provisos.</p>
+        <p>90. Consent known to be given under fear or misconception.<br> Consent of insane person.<br> Consent of child.</p>
+        <p>91. Exclusion of acts which are offences independently of harm caused.</p>
+        <p>92. Act done in good faith for benefit of a person without consent.</p>
+        <p>Provisos.</p>
+        <p>93. Communication made in good faith.</p>
+        <p>94. Act to which a person is compelled by threats.</p>
+        <p>95. Act causing slight harm.</p>
+        <p>Of the Right of Private Defense</p>
+        <p>96. Things done in private defence.</p>
+        <p>97. Right of private defence of the body and of property.</p>
+        <p>98. Right of private defence against the act of a person of unsound mind. etc.</p>
+        <p>99. Acts against which there is no right of private defence.<br> Extent to which the right may be exercised.</p>
+        <p>100.When the right of private defence of the body extends to causing death.</p>
+        <p>101.When such right extends to causing any harm other than death.</p>
+        <p>102.Commencement and continuance of the right of private defence of the body.</p>
+        <p>103.When the right of private defence of property extends to causing death.</p>
+        <p>104.When such right extends to causing any harm other than death.</p>
+        <p>105.Commencement and continuance of the right of private defence of property.</p>
+        <p>106.Right of private defence against deadly assault when there is risk of harm to innocent person.</p>
+        <p>CHAPTER V</p>
+        <p>OF ABETMENT</p>
+        <p>107.Abetment of a thing.</p>
+        <p>108.Abettor.</p>
+        <p>108A. Abetment in Indian of offences outside India.</p>
+        <p>109.Punishment of a abetment if the act abetted is committed in consequence and when no express provision is made for its punishment.</p>
+        <p>110.Punishment of abetment if person abetted does act with different intention from that of abettor.</p>
+        <p>111.Liability of abettor when one act abetted and different act done.</p>
+        <p>112.Abettor when liable to cumulative punishment for act abetted and for act done.</p>
+        <p>113.Liability of abettor for an effect caused by the act abetted different from that intended by the abettor.</p>
+        <p>114.Abettor present when offence is committed.</p>
+        <p>115.Abetment of offence punishable with death or imprisonment for life.—if offence not committed.<br> if act causing harm be done in consequence.</p>
+        <p>116.Abetment of offence punishable with imprisonment.—if offence be not committed.<br> if abettor or person abetted be a public servant whose duty it is to prevent offence.</p>
+        <p>117.Abetting commission of offence by the public or by more than ten persons.</p>
+        <p>118.Concealing design to commit offence punishable with death or imprisonment for life.<br> If offence be committed;<br> if offence be not committed.</p>
+        <p>119.Public servant concealing design to commit offence which it is his duty to prevent.<br> if offence be committed;<br> if offence be punishable with death, etc.<br> if offence be not committed.</p>
+        <p>120.Concealing design to commit offence punishable with imprisonment.<br> if offence be committed;<br> if offence be not committed.</p>
+        <p>CHAPTER VA</p>
+<p>CRIMINALCONSPIRACY</p>
+<p>SECTIONS</p>
+<p>120A. Definition of criminal conspiracy.</p>
+<p>120B. Punishment of criminal conspiracy.</p>
+<p>CHAPTER VI</p>
+<p>OF OFFENCES AGAINST THE STATE</p>
+<p>121. Waging, or attempting to wage war, or abetting waging of war, against the Government of India.</p>
+<p>121A. Conspiracy to commit offences punishable by section 121.</p>
+<p>122. Collecting arms, etc., with intention of waging war against the Government of India.</p>
+<p>123. Concealing with intent to facilitate design to wage war.</p>
+<p>124. Assaulting President. Governor, etc., with intent to compel or restrain the exercise of any lawful power.</p>
+<p>124A. Sedition.</p>
+<p>125. Waging war against any Asiatic power in alliance with the Government of India.</p>
+<p>126. Committing depredation on territories of power at peace with the Government of India.</p>
+<p>127. Receiving property taken by war or depredation mentioned in sections 125 and 126.</p>
+<p>128. Public servant voluntarily allowing prisoner of State or war to escape.</p>
+<p>129. Public servant negligently suffering such prisoner to escape.</p>
+<p>130. Aiding escape of, rescuing or harbouring such prisoner.</p>
+<p>CHAPTER VII</p>
+<p>OF OFFENCES RELATING TO THE ARMY, NAVYAND AIR FORCE</p>
+<p>131. Abetting mutiny, or attempting to seduce a soldier, sailor or airman from his duty.</p>
+<p>132. Abetment of mutiny, if mutiny is committed in consequence thereof.</p>
+<p>133. Abetment of assault by soldier, sailor or airman on his superior officer, when in execution of his office.</p>
+<p>134. Abetment of such assault, if the assault is committed.</p>
+<p>135. Abetment of desertion of soldier, sailor or airman.</p>
+<p>136. Harbouring deserter.</p>
+<p>137. Deserter concealed on board merchant vessel through negligence of master.</p>
+<p>138. Abetment of act of insubordination by soldier, sailor or airman.</p>
+<p>138A. [Repealed.].</p>
+<p>139. Persons subject to certain Acts.</p>
+<p>140. Wearing garb or carrying token used by soldier, sailor or airman.</p>
+<p>CHAPTER VIII</p>
+<p>OF OFFENCES AGAINST THE PUBLIC TRANQUILLITY</p>
+<p>141. Unlawful assembly.</p>
+<p>142. Being member of unlawful assembly.</p>
+<p>143. Punishment.</p>
+<p>144. Joining unlawful assembly armed with deadly weapon.</p>
+<p>145. Joining or continuing in unlawful assembly, knowing it has been commanded to disperse.</p>
+<p>146. Rioting.</p>
+<p>147. Punishment for rioting.</p>
+<p>148. Rioting, armed with deadly weapon.</p>
+<p>149. Every member of unlawful assembly guilty of offence committed in prosecution of common object.</p>
+<p>150. Hiring, or conniving at hiring, of persons to join unlawful assembly.</p>
+<p>151. Knowingly joining or continuing in assembly of five or more persons after it has been commanded to disperse.</p>
+<p>152. Assaulting or obstructing public servant when suppressing riot, etc.</p>
+<p>153. Wantonly giving provocation, with intent to cause riot—<br> if rioting be committed; if not committed.</p>
+<p>153A. Promoting enmity between different groups on grounds of religion, race, place of birth, residence.</p>
+<p>language, etc., and doing acts prejudicial to maintenance of harmony.<br> Offence committed in place of worship, etc.</p>
+<p>153AA. Punishment for knowingly carrying arms in any procession or organizing, or holding or taking part in</p>
+<p>any mass drill or mass training with arms.</p>
+<p>153B. Imputation, assertions prejudicial to national-integration.</p>
+<p>154. Owner or occupier of land on which an unlawful assembly is held.</p>
+<p>155. Liability of person for whose benefit riot is committed.</p>
+<p>156. Liablility of agent of owner or occupier for whose benefit riot is committed.</p>
+<p>157. Harbouring persons hired for an unlawful assembly.</p>
+<p>5</p>
+<p>SECTIONS</p>
+<p>158. Being hired to take part in an unlawful assembly or riot; or to go armed.</p>
+<p>159. Affray.</p>
+<p>160. Punishment for committing affray.</p>
+<p>CHAPTER IX</p>
+<p>OF OFFENCESBY OR RELATING TO PUBLIC SERVANTS</p>
+<p>161. [Repealed.].</p>
+<p>162. [Repealed.].</p>
+<p>163. [Repealed.].</p>
+<p>164. [Repealed.].</p>
+<p>165. [Repealed.].</p>
+<p>165A. [Repealed.].</p>
+<p>166. Public servant disobeying law, with intent to cause injury to any person.</p>
+<p>166A. Public servant disobeying direction under law.</p>
+<p>166B. Punishment for non-treatment of victim.</p>
+<p>167. Public servant framing an incorrect document with intent to cause injury.</p>
+<p>168. Public servant unlawfully engaging in trade.</p>
+<p>169. Public servant unlawfully buying or bidding for property.</p>
+<p>170. Personating a public servant.</p>
+<p>171. Wearing garb or carrying token used by public servant with fraudulent intent.</p>
+<p>CHAPTER IXA</p>
+<p>OF OFFENCESRELATING TO ELECTIONS</p>
+<p>171A. “Candidate”, “Electoral right” defined.</p>
+<p>171B. Bribery.</p>
+<p>171C. Undue influence at elections.</p>
+<p>171D.Personation at elections.</p>
+<p>171E. Punishment for bribery.</p>
+<p>171F. Punishment for undue influence or personation at an election.</p>
+<p>171G.False statement in connection with an election.</p>
+<p>171H. Illegal payments in connection with an election.</p>
+<p>171-I. Failure to keep election accounts.</p>
+<p>CHAPTER X</p>
+<p>OF CONTEMPTS OF THE LAWFUL AUTHORITY OF PUBLIC SERVANTS</p>
+<p>172. Absconding to avoid service of summons of other proceeding.</p>
+<p>173. Preventing service of summons or other proceeding, or preventing publication thereof.</p>
+<p>174. Non-attendance in obedience to an order from public servant.</p>
+<p>174A. Non-appearance in response to a proclamation under section 82 of Act 2 of 1974.</p>
+<p>175. Omission to produce document to public servant by person legally bound to produce it.</p>
+<p>176. Omission to give notice or information to public servant by person legally bound to give i t.</p>
+<p>177. Furnishing false information.</p>
+<p>178. Refusing oath or affirmation when duly required by public servant to make it.</p>
+<p>179. Refusing to answer public servant authorised to question.</p>
+<p>180. Refusing to sign statement.</p>
+<p>181. False statement on oath or affirmation to public servant or person authorised to administer an oath or</p>
+<p>affirmation.</p>
+<p>182. False information, with intent to cause public servant to use his lawful power to the injury of another person.</p>
+<p>183. Resistance to the taking of property by the lawful authority of a public servant.</p>
+<p>184. Obstructing sale of property offered for sale by authority of public servant.</p>
+<p>185. Illegal purchase or bid for property offered for sale by authority of public servant.</p>
+<p>186. Obstructing public servant in discharge of public functions.</p>
+<p>187. Omission to assist public servant when bound by law to give assistance.</p>
+<p>188. Disobedience to order duly promulgated by public servant.</p>
+<p>189. Threat of injury to public servant.</p>
+<p>190. Threat of injury to induce person to refrain from applying for protection to public servant.</p>
+<p>CHAPTER XI</p>
+<p>OF FLSEEVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE</p>
+<p>191. Giving false evidence.</p>
+<p>6</p>
+<p>SECTIONS</p>
+<p>192. Fabricating false evidence.</p>
+<p>193. Punishment for false evidence.</p>
+<p>194. Giving or fabricating false evidence with intent to procure conviction of capital offence.</p>
+<p>if innocent person be thereby convicted and executed.</p>
+<p>195. Giving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment for life</p>
+<p>or imprisonment.</p>
+<p>195A. Threatening any person to give false evidence.</p>
+<p>196. Using evidence known to be false.</p>
+<p>197. Issuing or signing false certificate.</p>
+<p>198. Using as true a certificate known to be false.</p>
+<p>199. False statement made in declaration which is by law receivable as evidence.</p>
+<p>200. Using as true such declaration knowing it to be false.</p>
+<p>201. Causing disappearance of evidence of offence, or giving false information, to screen offender—</p>
+<p>if a capital offence;</p>
+<p>if punishable with imprisonment for life;</p>
+<p>if punishable with less than ten Years' imprisonment.</p>
+<p>202. Intentional omission to give information of offence by person bound to inform.</p>
+<p>203. Giving false information respecting an offence committed.</p>
+<p>204. Destruction of document to prevent its production as evidence.</p>
+<p>205. False personation for purpose of act or proceeding in suit or prosecution.</p>
+<p>206. Fraudulent removal or concealment of property to prevent its seizure as forfeited or in execution.</p>
+<p>207. Fraudulent claim to property to prevent its seizure as forfeited or in execution.</p>
+<p>208. Fraudulently suffering decree for sum not due.</p>
+<p>209. Dishonestly making false claim in Court.</p>
+<p>210. Fraudulently obtaining decree for sum not due.</p>
+<p>211. False charge of offence made with intent to injure.</p>
+<p>212. Harbouring offender.—</p>
+<p>if a capital offence;</p>
+<p>if punishable with imprisonment for life, or with imprisonment.</p>
+<p>213. Taking gift, etc., to screen an offender from punishment.—</p>
+<p>if a capital offence;</p>
+<p>if punishable with imprisonment for life, or with imprisonment.</p>
+<p>214. Offering gift or restoration of property in consideration of screening offenderif a capital offence;</p>
+<p>if punishable with imprisonment for life, or with imprisonment.</p>
+<p>215. Taking gift to help to recover stolen property, etc.</p>
+<p>216. Harbouring offender who has escaped from custody of whose apprehension has been ordered -</p>
+<p>if a capital offence;</p>
+<p>if punishable with imprisonment for life, or with imprisonment.</p>
+<p>216A. Penalty for harbouring robbers or dacoits.</p>
+<p>216B. [Repealed.]</p>
+<p>217. Public servant disobeying direction of law with intent to save person from punishment or property from forfeiture.</p>
+<p>218. Public servant framing incorrect record or writing with intent to save person from punishment or property from</p>
+<p>forfeiture.</p>
+<p>219. Public servant in judicial proceeding corruptly making report, etc., contrary to law.</p>
+<p>220. Commitment for trial or confinement by person having authority who knows that he is acting contrary to law.</p>
+<p>221. Intentional omission to apprehend on the part of public servant bound to apprehend.</p>
+<p>222. Intentional omission to apprehend on the part of public servant bound to apprehend person under sentence or lawfully</p>
+<p>committed.</p>
+<p>223. Escape from confinement or custody negligently suffered by public servant.</p>
+<p>224. Resistance or obstruction by a person to his lawful apprehension.</p>
+<p>225. Resistance or obstruction to lawful apprehension of another person.</p>
+<p>225A. Omission to apprehend, or sufferance of escape, on part of public servant, in cases not otherwise, provided for.</p>
+<p>225B. Resistance or obstruction to lawful apprehension, or escape or rescue in cases not otherwise provided for.</p>
+<p>226. [Repealed.]</p>
+<p>227. Violation of condition of remission of punishment.</p>
+<p>228. Intentional insult or interruption to public servant sitting in judicial proceeding.</p>
+<p>228A. Disclosure of identity of the victim of certain offences, etc.</p>
+<p>229. Personation of a juror or assessor.</p>
+<p>229A. Failure by person released on bail or bond to appear in Court.</p>
+<p>CHAPTER XII</p>
+<p>OF OFFENCES RELATING TO COIN AND GOVERNMENT STAMPS</p>
+<p>SECTIONS</p>
+<p>230. “Coin” defined.</p>
+<p>Indian coin.</p>
+<p>231. Counterfeiting coin.</p>
+<p>232. Counterfeiting Indian coin.</p>
+<p>233. Making or selling instrument for counterfeiting coin.</p>
+<p>234. Making or selling instrument for counterfeiting Indian coin.</p>
+<p>235. Possession of instrument or material for the purpose of using the same for counterfeiting coin:</p>
+<p>if Indian coin.</p>
+<p>236. Abetting in India the counterfeiting out of India of coin.</p>
+<p>237. Import or export of counterfeit coin.</p>
+<p>238. Import or export of counterfeits of the Indian coin.</p>
+<p>239. Delivery of coin, possessed with knowledge that it is counterfeit.</p>
+<p>240. Delivery of Indian coin, possessed with knowledge that it is counterfeit.</p>
+<p>241. Delivery of coin as genuine, which, when first possessed, the deliverer did not know to be counterfeit.</p>
+<p>242. Possession of counterfeit coin by person who knew it to be counterfeit when he became possessed thereof.</p>
+<p>243. Possession of Indian coin by person who knew it to be counterfeit when he became possessed thereof.</p>
+<p>244. Person employed in mint causing coin to be of different weight or composition from that fixed by law.</p>
+<p>245. Unlawfully taking coining instrument from mint.</p>
+<p>246. Fraudulently or dishonestly diminishing weight or altering composition of coin.</p>
+<p>247. Fraudulently or dishonestly diminishing weight or altering composition of Indian coin.</p>
+<p>248. Altering appearance of coin with intent that it shall pass as coin of different description.</p>
+<p>249. Altering appearance of Indian coin with intent that it shall pass as coin of different description.</p>
+<p>250. Delivery of coin, possessed with knowledge that it is altered.</p>
+<p>251. Delivery of Indian coin, possessed with knowledge that it is altered.</p>
+<p>252. Possession of coin by person who knew it to be altered when he became possessed thereof.</p>
+<p>253. Possession of Indian coin by person who knew it to be altered when he became possessed thereof.</p>
+<p>254. Delivery of coin as genuine which, when first possessed, the deliverer did not know to be altered.</p>
+<p>255. Counterfeiting Government stamp.</p>
+<p>256. Having possession of instrument or material for counterfeiting Government stamp.</p>
+<p>257. Making or selling instrument for counterfeiting Government stamp.</p>
+<p>258. Sale of counterfeit Government stamp.</p>
+<p>259. Having possession of counterfeit Government stamp.</p>
+<p>260. Using as genuine a Government stamp known to be counterfeit.</p>
+<p>261. Effacing writing from substance bearing Government stamp, or removing from document a stamp used for it,</p>
+<p>with intent to cause loss to Government.</p>
+<p>262. Using Government stamp known to have been before used.</p>
+<p>263. Erasure of mark denoting that stamp has been used.</p>
+<p>263A. Prohibition of fictitious stamps.</p>
+<p>CHAPTER XIII</p>
+<p>OF OFFENCES RELATING TO WEIGHTS AND MEASURES</p>
+<p>264. Fraudulent use of false instrument for weighing.</p>
+<p>265. Fraudulent use of false weight or measure.</p>
+<p>266. Being In possession of false weight or measure.</p>
+<p>267. Making or selling false weight or measure.</p>
+<p>CHAPTER XIV</p>
+<p>OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE, DECENCY AND MORALS</p>
+<p>268. Public nuisance.</p>
+<p>269. Negligent act likely to spread infection of disease dangerous to life.</p>
+<p>270. Malignant act likely to spread infection of disease dangerous to life.</p>
+<p>271. Disobedience to quarantine rule.</p>
+<p>272. Adulteration of food or drink intended for sale.</p>
+<p>273. Sale of noxious food or drink.</p>
+<p>274. Adulteration of drugs.</p>
+<p>8</p>
+<p>SECTIONS</p>
+<p>275. Sale of adulterated drugs.</p>
+<p>276. Sale of drug as a different drug or preparation.</p>
+<p>277. Fouling water of public spring or reservoir.</p>
+<p>278. Making atmosphere noxious to health.</p>
+<p>279. Rash driving or riding on a public way.</p>
+<p>280. Rash navigation of vessel.</p>
+<p>281. Exhibition of false light, mark or buoy.</p>
+<p>282. Conveying person by water for hire in unsafe or overloaded vessel.</p>
+<p>283. Danger or obstruction in public way or line of navigation.</p>
+<p>284. Negligent conduct with respect to poisonous substance.</p>
+<p>285. Negligent conduct with respect to fire or combustible matter.</p>
+<p>286. Negligent conduct with respect to explosive substance.</p>
+<p>287. Negligent conduct with respect to machinery.</p>
+<p>288. Negligent conduct with respect to pulling down or repairing buildings.</p>
+<p>289. Negligent conduct with respect to animal.</p>
+<p>290. Punishment for public nuisance in cases not otherwise provided for.</p>
+<p>291. Continuance of nuisance after injunction to discontinue.</p>
+<p>292. Sale, etc., of obscene books, etc.</p>
+<p>293. Sale, etc., of obscene objects to young person.</p>
+<p>294. Obscene acts and songs.</p>
+<p>294A. Keeping lottery office.</p>
+<p>CHAPTER XV</p>
+<p>OF OFFENCES RELATING TO RELIGION</p>
+<p>295. Injuring or defiling place of worship, with intent to insult the religion of any class.</p>
+<p>295A. Deliberate and malicious acts, intended to outrage religious feelings of any class by insulting its religion or religious beliefs.</p>
+<p>296. Disturbing religious assembly.</p>
+<p>297. Trespassing on burial places, etc.</p>
+<p>298. Uttering words, etc., with deliberate intent to wound the religious feelings.</p>
+<p>CHAPTER XVI</p>
+<p>OF OFFENCES AFFECTING THE HUMAN BODY</p>
+<p>Of offences affecting life</p>
+<p>299. Culpable homicide.</p>
+<p>300. Murder.</p>
+<p>When culpable homicide is not murder.</p>
+<p>301. Culpable homicide by causing death of person other than person whose death was intended.</p>
+<p>302. Punishment for murder.</p>
+<p>303. Punishment for murder by life-convict.</p>
+<p>304. Punishment for culpable homicide not amounting to murder.</p>
+<p>304A. Causing death by negligence.</p>
+<p>304B. Dowry death.</p>
+<p>305. Abetment of suicide of child or insane person.</p>
+<p>306. Abetment of suicide.</p>
+<p>307. Attempt to murder.</p>
+<p>Attempts by life-convicts.</p>
+<p>308. Attempt to commit culpable homicide.</p>
+<p>309. Attempt to commit suicide.</p>
+<p>310. Thug.</p>
+<p>311. Punishment.</p>
+<p>Of the causing of Miscarriage, of Injuries to unborn Children, of the Exposure of Infants,</p>
+<p>and of the concealment of Births</p>
+<p>312. Causing miscarriage.</p>
+<p>313. Causing miscarriage without woman's consent.</p>
+<p>314. Death caused by act done with intent to cause miscarriage.</p>
+<p>if act done without woman's consent.</p>
+<p>315. Act done with intent to prevent child being born alive or to cause it to die after birth.</p>
+<p>316. Causing death of quick unborn child by act amounting to culpable homicide.</p>
+<p>9</p>
+<p>SECTIONS</p>
+<p>317. Exposure and abandonment of child under twelve years, by parent or person having care of it.</p>
+<p>318. Concealment of birth by secret disposal of dead body.</p>
+<p>Of Hurt</p>
+<p>319. Hurt.</p>
+<p>320. Grievous hurt.</p>
+<p>321. Voluntarily causing hurt.</p>
+<p>322. Voluntarily causing grievous hurt.</p>
+<p>323. Punishment for voluntarily causing hurt.</p>
+<p>324. Voluntarily causing hurt by dangerous weapons or means.</p>
+<p>325. Punishment for voluntarily causing grievous hurt.</p>
+<p>326. Voluntarily causing grievous hurt by dangerous weapons or means.</p>
+<p>326A. Voluntarily causing grievous hurt by use of acid, etc.</p>
+<p>326B. Voluntarily throwing or attempting to throw acid.</p>
+<p>327. Voluntarily causing hurt to extort property, or to constrain to an illegal act.</p>
+<p>328. Causing hurt by means of poison, etc., with intent to commit an offence.</p>
+<p>329. Voluntarily causing grievous hurt to extort property, or to constrain to an illegal act.</p>
+<p>330. Voluntarily causing hurt to extort confession, or to compel restoration of property.</p>
+<p>331. Voluntarily causing grievous hurt to extort confession, or to compel restoration of property.</p>
+<p>332. Voluntarily causing hurt to deter public servant from his duty.</p>
+<p>333. Voluntarily causing grievous hurt to deter public servant from his duty.</p>
+<p>334. Voluntarily causing hurt on provocation.</p>
+<p>335. Voluntarily causing grievous hurt on provocation.</p>
+<p>336. Act endangering life or personal safety of others.</p>
+<p>337. Causing hurt by act endangering life or personal safety of others.</p>
+<p>338. Causing grievous hurt by act endangering life or personal safety of others.</p>
+<p>Of wrongful restraint and wrongful confinement</p>
+<p>339. Wrongful restraint.</p>
+<p>340. Wrongful confinement.</p>
+<p>341. Punishment for wrongful restraint.</p>
+<p>342. Punishment for wrongful confinement.</p>
+<p>343. Wrongful confinement for three or more days.</p>
+<p>344. Wrongful confinement for ten or more days.</p>
+<p>345. Wrongful confinement of person for whose liberation writ has been issued.</p>
+<p>346. Wrongful confinement in secret.</p>
+<p>347. Wrongful confinement to extort property, or constrain to illegal act.</p>
+<p>348. Wrongful confinement to extort confession, or compel restoration of property.</p>
+<p>Of Criminal Force and Assault</p>
+<p>349. Force.</p>
+<p>350. Criminal force.</p>
+<p>351. Assault.</p>
+<p>352. Punishment for assault or criminal force otherwise than on grave provocation.</p>
+<p>353. Assault or criminal force to deter public servant from discharge of his duty.</p>
+<p>354. Assault of criminal force to woman with intent to outrage her modesty.</p>
+<p>354A. Sexual harassment and punishment for sexual harassment.</p>
+<p>354B. Assault or use of criminal force to woman with intent to disrobe.</p>
+<p>354C. Voyeurism.</p>
+<p>354D. Stalking.</p>
+<p>355. Assault or criminal force with intent to dishonour person, otherwise than on grave provocation.</p>
+<p>356. Assault or criminal force in attempt to commit theft of property carried by a person.</p>
+<p>357. Assault or criminal force in attempt wrongfully to confine a person.</p>
+<p>358. Assault or criminal force on grave provocation.</p>
+<p>Of Kidnapping, Abduction, Slavery and Forced Labour</p>
+<p>359. Kidnapping.</p>
+<p>360. Kidnapping from India.</p>
+<p>361. Kidnapping from lawful guardianship.</p>
+<p>362. Abduction.</p>
+<p>363. Punishment for kidnapping.</p>
+<p>363A. Kidnapping or maiming a minor for purposes of begging.</p>
+<p>364. Kidnapping or abducting in order to murder.</p>
+<p>SECTIONS</p>
+<p>364A. Kidnapping for ransom, etc.</p>
+<p>365. Kidnapping or abducting with intent secretly and wrongfully to confine person.</p>
+<p>366. Kidnapping, abducting or inducing woman to compel her marriage, etc.</p>
+<p>366A. Procuration of minor girl.</p>
+<p>366B. Importation of girl from foreign country.</p>
+<p>367. Kidnapping or abducting in order to subject person to grievous hurt, slavery, etc.</p>
+<p>368. Wrongfully concealing or keeping in confinement, kidnapped or abducted person.</p>
+<p>369. Kidnapping or abducting child under ten years with intent to steal from its person.</p>
+<p>370. Trafficking of person.</p>
+<p>370A. Exploitation of a trafficked person.</p>
+<p>371. Habitual dealing in slaves.</p>
+<p>372. Selling minor for purposes of prostitution, etc.</p>
+<p>373. Buying minor for purposes of prostitution, etc.</p>
+<p>374. Unlawful compulsory labour.</p>
+<p>Sexual offences</p>
+<p>375. Rape.</p>
+<p>376. Punishment for rape.</p>
+<p>376A. Punishment for causing death or resulting in persistent vegetative state of victim.</p>
+<p>376B. Sexual intercourse by husband upon his wife during separation.</p>
+<p>376C. Sexual intercourse by a person in authority.</p>
+<p>376D. Gang rape.</p>
+<p>376DA. Punishment for gang rape on woman under sixteen years of age.</p>
+<p>376DB. Punishment for gang rape on woman under twelve years of age.</p>
+<p>376E. Punishment for repeat offenders.</p>
+<p>Of Unnatural offences</p>
+<p>377. Unnatural offences.</p>
+<p>CHAPTER XVII</p>
+<p>OF OFFENCES AGAINST PROPERTY</p>
+<p>Of Theft</p>
+<p>378. Theft.</p>
+<p>379. Punishment for theft.</p>
+<p>380. Theft in dwelling house, etc.</p>
+<p>381. Theft by clerk or servant of property in possession of master.</p>
+<p>382. Theft after preparation made for causing death, hurt or restraint in order to the committing of the theft.</p>
+<p>Of Extortion</p>
+<p>383. Extortion.</p>
+<p>384. Punishment for extortion.</p>
+<p>385. Putting person in fear of injury in order to commit extortion.</p>
+<p>386. Extortion by putting a person in fear of death on grievous hurt.</p>
+<p>387. Putting person in fear of death or of grievous hurt, in order to commit extortion.</p>
+<p>388. Extortion by threat of accusation of an offence punishable with death or imprisonment for life, etc.</p>
+<p>389. Putting person in fear of accusation of offence, in order to commit extortion.</p>
+<p>Of Robbery and Dacoity</p>
+<p>390. Robbery.</p>
+<p>When theft is robbery.</p>
+<p>When extortion is robbery.</p>
+<p>391. Dacoity.</p>
+<p>392. Punishment for robbery.</p>
+<p>393. Attempt to commit robbery.</p>
+<p>394. Voluntarily causing hurt in committing robbery.</p>
+<p>395. Punishment for dacoity.</p>
+<p>396. Dacoity with murder.</p>
+<p>397. Robbery, or dacoity, with attempt to cause death or grievous hurt.</p>
+<p>398. Attempt to commit robbery or dacoity when armed with deadly weapon.</p>
+<p>399. Making preparation to commit dacoity.</p>
+<p>400. Punishment for belonging to gang of dacoits.</p>
+<p>401. Punishment for belonging to gang of thieves.</p>
+<p>402. Assembling for purpose of committing dacoity.</p>
+<p>Of Criminal Misappropriation of Property</p>
+<p>SECTIONS</p>
+<p>403. Dishonest misappropriation of property.</p>
+<p>404. Dishonest misappropriation of property possessed by deceased person at the time of his death.</p>
+<p>Of Criminal Breach of Trust</p>
+<p>405. Criminal breach of trust.</p>
+<p>406. Punishment for criminal breach of trust.</p>
+<p>407. Criminal breach of trust by carrier, etc.</p>
+<p>408. Criminal breach of trust by clerk or servant.</p>
+<p>409. Criminal breach of trust by public, servant. or by banker, merchant or agent.</p>
+<p>Of the Receiving of Stolen Property</p>
+<p>410. Stolen property.</p>
+<p>411. Dishonestly receiving stolen property.</p>
+<p>412. Dishonestly receiving property stolen in the commission of a dacoity.</p>
+<p>413. Habitually dealing in stolen property.</p>
+<p>414. Assisting in concealment of stolen property.</p>
+<p>Of Cheating</p>
+<p>415. Cheating.</p>
+<p>416. Cheating by personation.</p>
+<p>417. Punishment for cheating.</p>
+<p>418. Cheating with knowledge that wrongful loss may ensue to person whose interest offender is bound to protect.</p>
+<p>419. Punishment for cheating by personation.</p>
+<p>420. Cheating and dishonestly inducing delivery of property.</p>
+<p>Of Fraudulent Deeds and Dispositions of Property</p>
+<p>421. Dishonest or fraudulent removal or concealment of property to prevent distribution among creditor.</p>
+<p>422. Dishonestly or fraudulently preventing debt being available for creditors.</p>
+<p>423. Dishonest or fraudulent execution of deed of transfer containing false statement of consideration.</p>
+<p>424. Dishonest or fraudulent removal or concealment of property.</p>
+<p>Of Mischief</p>
+<p>425. Mischief.</p>
+<p>426. Punishment for mischief.</p>
+<p>427. Mischief causing damage to the amount of fifty rupees.</p>
+<p>428. Mischief by killing or maiming animal of the value of ten rupees.</p>
+<p>429. Mischief by killing or maiming cattle, etc., of any value or any animal of the value of fifty rupees.</p>
+<p>430. Mischief by injury to works of irrigation or by wrongfully diverting water.</p>
+<p>431. Mischief by injury to public road, bridge, river or channel.</p>
+<p>432. Mischief by causing inundation or obstruction to public drainage attended with damage.</p>
+<p>433. Mischief by destroying, moving or rendering less useful a light-house or sea-mark.</p>
+<p>434. Mischief by destroying or moving, etc., a land-mark fixed by public authority.</p>
+<p>435. Mischief by fire or explosive substance with intent to cause damage to amount of one hundred or (in case of agricultural produce ) ten rupees.</p>
+<p>436. Mischief by fire or explosive substance with intent to destroy house, etc.</p>
+<p>437. Mischief with intent to destroy or make unsafe a decked vessel or one of twenty tons burden.</p>
+<p>438. Punishment for the mischief described in section 437 committed by fire or explosive substance.</p>
+<p>439. Punishment for intentionally running vessel aground, or ashore with intent to commit theft, etc.</p>
+<p>440. Mischief committed after preparation made for causing death or hurt.</p>
+<p>Of Criminal Trespass</p>
+<p>441. Criminal trespass.</p>
+<p>442. House-trespass.</p>
+<p>443. Lurking house-trespass.</p>
+<p>444. Lurking house-trespass by night.</p>
+<p>445. House-breaking.</p>
+<p>446. House-breaking by night.</p>
+<p>447. Punishment for criminal trespass.</p>
+<p>448. Punishment for house-trespass.</p>
+<p>449. House-trespass in order to commit offence punishable with death.</p>
+<p>450. House-trespass in order to commit offence punishable with imprisonment for life.</p>
+<p>451. House-trespass in order to commit offence punishable with imprisonment.</p>
+<p>12</p>
+<p>SECTIONS</p>
+<p>452. House-trespass after preparation for hurt, assault or wrongful restraint.</p>
+<p>453. Punishment for lurking house-trespass or house-breaking.</p>
+<p>454. Lurking house-trespass or house-breaking in order to commit offence punishable with imprisonment.</p>
+<p>455. Lurking house-trespass or house-breaking after preparation for hurt, assault or wrongful restraint.</p>
+<p>456. Punishment for lurking house-trespass or house-breaking by night.</p>
+<p>457. Lurking house-trespass or house-breaking by night in order to commit offence punishable with imprisonment.</p>
+<p>458. Lurking house-trespass or house-breaking by night after preparation for hurt, assault, or wrongful restraint.</p>
+<p>459. Grievous hurt caused whilst committing lurking house-trespass or house-breaking.</p>
+<p>460. All persons jointly concerned in lurking house-trespass or house-breaking by night punishable where death or grievous hurt caused by one of them.</p>
+<p>461. Dishonestly breaking open receptacle containing property.</p>
+<p>462. Punishment for same offence when committed by person entrusted with custody.</p>
+<p>CHAPTER XVIII</p>
+<p>OF OFFENCES RELATINGTO DOCUMENTS AND TO PROPERTY MARKS</p>
+<p>463. Forgery.</p>
+<p>464. Making a false document.</p>
+<p>465. Punishment for forgery.</p>
+<p>466. Forgery of record of Court or of public register, etc.</p>
+<p>467. Forgery of valuable security, will, etc.</p>
+<p>468. Forgery for purpose of cheating.</p>
+<p>469. Forgery for purpose of harming reputation.</p>
+<p>470. Forged document.</p>
+<p>471. Using as genuine a forged document or electronic record.</p>
+<p>472. Making or possessing counterfeit seal, etc., with intent to commit forgery punishable under section 467.</p>
+<p>473. Making or possessing counterfeit seal, etc., with intent to commit forgery punishable otherwise.</p>
+<p>474. Having possession of document described in section 466 or 467, knowing it to be forged and intending to use it as genuine.</p>
+<p>475. Counterfeiting device or mark used for authenticating documents described in section 467, or possessing counterfeit marked material.</p>
+<p>476. Counterfeiting device or mark used for authenticating documents other than those described in section 467, or possessing counterfeit marked material.</p>
+<p>477. Fraudulent cancellation, destruction, etc., of will, authority to adopt, or valuable security.</p>
+<p>477A. Falsification of accounts.</p>
+<p>Of Property and Other Marks</p>
+<p>478. [Repealed.]</p>
+<p>479. Property mark.</p>
+<p>480. [Repealed.]</p>
+<p>481. Using a false property mark.</p>
+<p>482. Punishment for using a false property mark.</p>
+<p>483. Counterfeiting a property mark used by another.</p>
+<p>484. Counterfeiting a mark used by a public servant.</p>
+<p>485. Making or possession of any instrument for counterfeiting a property mark.</p>
+<p>486. Selling goods marked with a counterfeit property mark.</p>
+<p>487. Making a false mark upon any receptacle containing goods.</p>
+<p>488. Punishment for making use of any such false mark.</p>
+<p>489. Tampering with property mark with intent to cause injury.</p>
+<p>Of Currency-Notes and Bank-Notes</p>
+<p>489A. Counterfeiting currency-notes or bank-notes.</p>
+<p>489B. Using as genuine, forged or counterfeit currency-notes or bank-notes.</p>
+<p>489C. Possession of forged or counterfeit currency notes or bank-notes.</p>
+<p>489D. Making or possessing instruments or materials for forging or counterfeiting currency-notes or bank-notes.</p>
+<p>489E. Making or using documents resembling currency-notes or bank-notes.</p>
+<p>CHAPTER XIX</p>
+<p>OF THE CRIMINAL BREACH OF CONTRACTS OF SERVICE</p>
+<p>490. [Repealed.]</p>
+<p>491. Breach of contract to attend on and supply wants of helpless person.</p>
+<p>492. [Repealed.]</p>
+<p>13</p>
+<p>CHAPTER XX</p>
+<p>OF OFFENCES RELATINGTO MARRIAGE</p>
+<p>SECTIONS</p>
+<p>493. Cohabitation caused by a man deceitfully inducing a belief of lawful marriage.</p>
+<p>494. Marrying again during life-time of husband or wife.</p>
+<p>495. Same offence with concealment of former marriage from person with whom subsequent marriage is contracted.</p>
+<p>496. Marriage ceremony fraudulently gone through without lawful marriage.</p>
+<p>497. Adultery.</p>
+<p>498. Enticing or taking away or detaining with criminal intent a married woman.</p>
+<p>CHAPTER XXA</p>
+<p>OF CRUELTY BY HUSBAND OR RELATIVES OF HUSBAND</p>
+<p>498A. Husband or relative of husband of a woman subjecting her to cruelty.</p>
+<p>CHAPTER XXI</p>
+<p>OF DEFAMATION</p>
+<p>499. Defamation.</p>
+<p>Imputation of truth which public good requires to be made or published.</p>
+<p>Public conduct of public servants.</p>
+<p>Conduct of any person touching any public question.</p>
+<p>Publication of reports of proceedings of Courts.</p>
+<p>Merits of case decided in Court or conduct of witnesses and others concerned.</p>
+<p>Merits of public performance.</p>
+<p>Censure passed in good faith by person having lawful authority over another.</p>
+<p>Accusation preferred in good faith to authorised person.</p>
+<p>Imputation made in good faith by person for protection of his or other's interests.</p>
+<p>Caution intended for good of person to whom conveyed or for public good.</p>
+<p>500. Punishment for defamation.</p>
+<p>501. Printing or engraving matter known to be defamatory.</p>
+<p>502. Sale of printed or engraved substance containing defamatory matter.</p>
+<p>CHAPTER XXII</p>
+<p>OR CRIMINAL INTIMIDATION, INSULTAND ANNOYANCE</p>
+<p>503. Criminal intimidation.</p>
+<p>504. Intentional insult with intent to provoke breach of the peace.</p>
+<p>505. Statements conducing to public mischief.</p>
+<p>Statements creating or promoting enmity, hatred or ill-will between classes.</p>
+<p>Offence under sub-section (2) committed in place of worship, etc.</p>
+<p>506. Punishment for criminal intimidation.</p>
+<p>If threat be to cause death or grievous hurt, etc.</p>
+<p>507. Criminal intimidation by an anonymous communication.</p>
+<p>508. Act caused by inducing person to believe that he will be rendered an object of the Divine displeasure.</p>
+<p>509. Word, gesture or act intended to insult the modesty of a woman.</p>
+<p>510. Misconduct in public by a drunken person.</p>
+<p>CHAPTER XXIII</p>
+<p>OF ATTEMPTS OF COMMIT OFFENCES</p>
+<p>511. Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment.</p>
+
+
+        <!-- Add more sections here -->
+    </div>
+</div>
+
+<script>
+document.getElementById('searchButton').addEventListener('click', function() {
+    performSearch();
+});
+
+document.getElementById('searchInput').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        performSearch();
+    }
+});
+
+function performSearch() {
+    var searchQuery = document.getElementById('searchInput').value.toLowerCase();
+    var paragraphs = document.querySelectorAll('#textToSearch p');
+    paragraphs.forEach(function(para) {
+        para.innerHTML = para.textContent; // Reset paragraph content
+        var textToSearch = para.innerText.toLowerCase();
+        var regex = new RegExp('\\b' + searchQuery.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&') + '\\b', 'gi');
+        var matches = textToSearch.match(regex);
+        if (matches) {
+            matches.forEach(function(match) {
+                var highlightedMatch = '<span class="highlight">' + match + '</span>';
+                textToSearch = textToSearch.replace(match, highlightedMatch);
+            });
+            para.innerHTML = textToSearch; // Update paragraph content with highlights
+            // Scroll to the paragraph containing the matched word
+            para.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    });
+}
+</script>
+
+</body>
+</html>

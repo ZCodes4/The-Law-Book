@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Code of Civil Procedure</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        overflow-y: auto; /* Adding scrollbar for overflow */
+        height: 100vh; /* Making the container full height of viewport */
+    }
+    header {
+        background-color: #4e4f50;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        color: #fff;
+        padding: 15px 20px;
+        text-align: center;
+    }
+    input[type="search"] {
+        width: calc(100% - 5px);
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+    }
+    #textToSearch {
+        background-color: #fff;
+        padding: 20px;
+        font-size: 17px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .highlight {
+        background-color: yellow;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .search-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .search-button:hover {
+        background-color: #555;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>The Code Of Cicil Procedure</h1>
+</header>
+<div class="container">
+    <input type="search" id="searchInput" placeholder="Search sections...">
+    <button id="searchButton" class="search-button">Search</button>
+    <div id="textToSearch">
+        <p>PRELIMINARY</p>
+        <p>SECTIONS</p>
+        <p>1. Short title, commencement and extent.</p>
+        <p>2. Definitions.</p>
+        <p>3. Subordination of Courts.</p>
+        <p>4. Savings.</p>
+        <p>5. Application of the Code to Revenue Courts.</p>
+        <p>6. Pecuniary jurisdiction.</p>
+        <p>7. Provincial Small Cause Courts.</p>
+        <p>8. Presidency Small Cause Courts.</p>
+        <p>PART I</p>
+        <p>SUITS IN GENERAL</p>
+        <p>JURISDICTION OF THE COURTS AND Res judicata</p>
+        <p>9. Courts to try all civil suits unless barred.</p>
+        <p>10. Stay of suit.</p>
+        <p>11. Res judicata.</p>
+        <p>12. Bar to further suit.</p>
+        <p>13. When foreign judgment not conclusive.</p>
+        <p>14. Presumption as to foreign judgments.</p>
+        <p>PLACE OF SUING</p>
+        <p>15. Court in which suits to be instituted.</p>
+        <p>16. Suits to be instituted where subject-matter situate.</p>
+        <p>17. Suits for immovable property situate within jurisdiction of different Courts.</p>
+        <p>18. Place of Institution of suit where local limits of jurisdiction of Courts are uncertain.</p>
+        <p>19. Suits for compensation for wrongs to person or movables.</p>
+        <p>20. Other suits to be instituted where defendants reside or cause of action arises.</p>
+        <p>21. Objections to jurisdiction.</p>
+        <p>21A. Bar on suit to set aside decree on objection as to place of suing.</p>
+        <p>22. Power to transfer suits which may be instituted in more than one Court.</p>
+        <p>23. To what Court application lies.</p>
+        <p>24. General power of transfer and withdrawal.</p>
+        <p>25. Power of Supreme Court to transfer suits, etc.</p>
+        <p>INSTITUTION OF SUITS</p>
+        <p>26. Institution of suits.</p>
+        <p>SUMMONS AND DISCOVERY</p>
+        <p>SECTIONS</p>
+        <p>27. Summons to defendants.</p>
+        <p>28. Service of summons where defendant resides in another State.</p>
+        <p>29. Service of foreign summonses.</p>
+        <p>30. Power to order discovery and the like.</p>
+        <p>31. Summons to witness.</p>
+        <p>32. Penalty for default.</p>
+        <p>JUDGMENT AND DECREE</p>
+        <p>33. Judgment and decree.</p>
+        <p>INTEREST</p>
+        <p>34. Interest.</p>
+        <p>COSTS</p>
+        <p>35. Costs.</p>
+        <p>35A. Compensatory costs in respect of false or vexatious claims or defences.</p>
+        <p>35B. Costs for causing delay.</p>
+        <p>PART II</p>
+        <p>EXECUTION</p>
+        <p>GENERAL</p>
+        <p>36. Application to orders.</p>
+        <p>37. Definition of Court which passed a decree.</p>
+        <p>COURTS BY WHICH DECREES MAY BE EXECUTED</p>
+        <p>38. Court by which decree may be executed.</p>
+        <p>39. Transfer of decree.</p>
+        <p>40. Transfer of decree to Court in another State.</p>
+        <p>41. Result of execution proceedings to be certified.</p>
+        <p>42. Powers of Court in executing transferred decree.</p>
+        <p>43. Execution of decrees passed by Civil Courts in places to which this Code does not extend.</p>
+        <p>44. Execution of decrees passed by Revenue Courts in places to which this Code does not extend.</p>
+        <p>44A. Execution of decrees passed by Courts in reciprocating territory.</p>
+        <p>45. Execution of decrees outside India.</p>
+        <p>46. Precepts.</p>
+        <p>QUESTIONS TO BE DETERMINED BY COURT EXECUTING DECREE</p>
+        <p>47. Questions to be determined by the Court executing decree.</p>
+        <p>LIMIT OF TIME FOR EXECUTION</p>
+        <p>48. [Repealed.].</p>
+        <p>TRANSFEREES AND LEGAL REPRESENTATIVES</p>
+        <p>49. Transferee.</p>
+        <p>50. Legal representative.</p>
+        <p>PROCEDURE IN EXECUTION</p>
+        <p>51. Powers of Court to enforce execution.</p>
+        <p>52. Enforcement of decree against legal representative.</p>
+        <p>53. Liability of ancestral property.</p>
+        <p>54. Partition of estate or separation of share.</p>
+        <p>ARREST AND DETENTION</p>
+        <p>55. Arrest and detention.</p>
+        <p>56. Prohibition of arrest or detention of women in execution of decree for money.</p>
+        <p>57. Subsistence-allowance.</p>
+        <p>58. Detention and release.</p>
+        <p>59. Release on ground of illness.</p>
+        <p>ATTACHMENT</p>
+        <p>60. Property liable to attachment and sale in execution of decree.</p>
+        <p>61. Partial exemption of agricultural produce.</p>
+        <p>62. Seizure of property in dwelling house.</p>
+        <p>63. Property attached in execution of decrees of several Courts.</p>
+        <p>64. Private alienation of property after attachment to be void.</p>
+        <p>SALE</p>
+        <p>65. Purchaser’s title.</p>
+        <p>66. [Repealed.].</p>
+        <p>67. Power for State Government to make rules as to sales of land in execution of decrees for payment of money.</p>
+        <p>DELEGATION TO COLLECTOR OF POWER TO EXECUTE DECREES</p>
+        <p>AGAINST IMMOVABLE PROPERTY</p>
+        <p>68. [Repealed.].</p>
+        <p>69. [Repealed.].</p>
+        <p>70. [Repealed.].</p>
+        <p>71. [Repealed.].</p>
+        <p>72. [Repealed.].</p>
+        <p>DISTRIBUTION OF ASSETS</p>
+        <p>73. Proceeds of execution-sale to be rateably distributed among decree-holders.</p>
+        <p>RESISTANCE TO EXECUTION</p>
+        <p>74. Resistance to execution.</p>
+        <p>PART III</p>
+        <p>INCIDENTAL PROCEEDINGS</p>
+        <p>COMMISSIONS</p>
+        <p>SECTIONS</p>
+        <p>75. Power of Court to issue commissions.</p>
+        <p>76. Commission to another Court.</p>
+        <p>77. Letter of request.</p>
+        <p>78. Commissions issued by foreign Courts.</p>
+        <p>PART IV</p>
+        <p>SUITS IN PARTICULAR CASES</p>
+        <p>SUITS BY OR AGAINST THE GOVERNMENT OR PUBLIC OFFICERS IN</p>
+        <p>THEIR OFFICIAL CAPACITY</p>
+        <p>79. Suits by or against Government.</p>
+        <p>80. Notice.</p>
+        <p>81. Exemption from arrest and personal appearance.</p>
+        <p>82. Execution of decree.</p>
+        <p>SUITS BY ALIENS AND BY OR AGAINST FOREIGN RULERS,</p>
+        <p>AMBASSADORS AND ENVOYS</p>
+        <p>83. When aliens may sue.</p>
+        <p>84. When foreign States may sue.</p>
+        <p>85. Persons specially appointed by Government to prosecute or defend on behalf of foreign Rulers.</p>
+        <p>86. Suits against foreign Rulers, Ambassadors and Envoys.</p>
+        <p>87. Style of foreign Rulers as parties to suits.</p>
+        <p>87A. Definitions of “foreign State” and “Ruler”</p>
+        <p>SUITS AGAINST RULERS OF FORMER INDIAN STATES</p>
+        <p>87B. Application of sections 85 and 86 to Rulers of former Indian States.</p>
+        <p>INTERPLEADER</p>
+        <p>88. Where interpleader-suit may be instituted.</p>
+        <p>PART V</p>
+        <p>SPECIAL PROCEEDINGS</p>
+        <p>ARBITRATION</p>
+        <p>89. Settlement of disputes outside the Court.</p>
+        <p>SPECIAL CASE</p>
+        <p>90. Power to state case for opinion of Court.</p>
+        <p>PUBLIC NUISANCES AND OTHER WRONGFUL ACTS AFFECTING THE PUBLIC</p>
+        <p>91. Public nuisances and other wrongful acts affecting the public.</p>
+        <p>92. Public charities.</p>
+        <p>93. Exercise of powers of Advocate-General outside presidency-towns.</p>
+        <p>PART VI</p>
+        <p>SUPPLEMENTAL PROCEEDINGS</p>
+        <p>SECTIONS</p>
+        <p>94. Supplemental proceedings.</p>
+        <p>95. Compensation for obtaining arrest, attachment or injunction on insufficient ground.</p>
+        <p>PART VII</p>
+        <p>APPEALS</p>
+        <p>APPEALS FROM ORIGINAL DECREES</p>
+        <p>96. Appeal from original decree.</p>
+        <p>97. Appeal from final decree where no appeal from preliminary decree.</p>
+        <p>98. Decision where appeal heard by two or more Judges.</p>
+        <p>99. No decree to be reversed or modified for error or irregularity not affecting merits or jurisdiction.</p>
+        <p>99A. No order under section 47 to be reversed or modified unless decision of the case is prejudicially</p>
+        <p>affected.</p>
+        <p>APPEALS FROM APPELLATE DECREES</p>
+        <p>100. Second appeal.</p>
+        <p>100A. No further appeal in certain cases.</p>
+        <p>101. Second appeal on no other grounds.</p>
+        <p>102. No second appeal in certain cases.</p>
+        <p>103. Power of High Court to determine issues of fact.</p>
+        <p>APPEALS FROM ORDERS</p>
+        <p>104. Orders from which appeal lies.</p>
+        <p>105. Other orders.</p>
+        <p>106. What Courts to hear appeals.</p>
+        <p>GENERAL PROVISIONS RELATING TO APPEALS</p>
+        <p>107. Powers of Appellate Court.</p>
+        <p>108. Procedure in appeals from appellate decrees and orders.</p>
+        <p>APPEALS TO THE SUPREME COURT</p>
+        <p>109. When appeals lie to the Supreme Court.</p>
+        <p>110. [Omitted.].</p>
+        <p>111. [Omitted.].</p>
+        <p>111A. [Omitted.].</p>
+        <p>112. Savings.</p>
+        <p>PART VIII</p>
+        <p>REFERENCE, REVIEW AND REVISION</p>
+        <p>113. Reference to High Court.</p>
+        <p>114. Review.</p>
+        <p>115. Revision.</p>
+        <p>PART IX</p>
+        <p>SPECIAL PROVISIONS RELATING TO THE HIGH COURTS NOT BEING</p>
+        <p>THE COURT OF A JUDICIAL COMMISSIONER</p>
+        <p>116. Part to apply only to certain High Courts.</p>
+        <p>117. Application of Code to High Courts.</p>
+        <p>118. Execution of decree before ascertainment of costs.</p>
+        <p>119. Unauthorised persons not to address Court.</p>
+        <p>120. Provisions not applicable to High Court in original civil jurisdiction.</p>
+        <p>PART X</p>
+        <p>RULES</p>
+        <p>121. Effect of rules in First Schedule.</p>
+        <p>122. Power of certain High Courts to make rules.</p>
+        <p>123. Constitution of Rules Committees in certain States.</p>
+        <p>124. Committee to report to High Court.</p>
+        <p>125. Power of other High Courts to make rules.</p>
+        <p>126. Rules to be subject to approval.</p>
+        <p>127. Publication of rules.</p>
+        <p>128. Matters for which rules may provide.</p>
+        <p>129. Power of High Courts to make rules as to their original civil procedure.</p>
+        <p>130. Power of other High Courts to make rules as to matters other than procedure.</p>
+        <p>131. Publication of rules.</p>
+        <p>PART XI</p>
+        <p>MISCELLANEOUS</p>
+        <p>132. Exemption of certain women from personal appearance.</p>
+        <p>133. Exemption of other persons.</p>
+        <p>134. Arrest other than in execution of decree.</p>
+        <p>135. Exemption from arrest under civil process.</p>
+        <p>135A. Exemption of members of legislative bodies from arrest and detention under civil process.</p>
+        <p>136. Procedure where person to be arrested or property to be attached is outside district.</p>
+        <p>137. Language of subordinate Courts.</p>
+        <p>138. Power of High Court to require evidence to be recorded in English.</p>
+        <p>139. Oath on affidavit by whom to be administered.</p>
+        <p>140. Assessors in causes of salvage, etc.</p>
+        <p>141. Miscellaneous proceedings.</p>
+        <p>142. Orders and notices to be in writing.</p>
+        <p>143. Postage.</p>
+        <p>144. Application for restitution.</p>
+        <p>145. Enforcement of liability of surety.</p>
+        <p>146. Proceedings by or against representatives.</p>
+        <p>147. Consent or agreement by persons under disability.</p>
+        <p>148. Enlargement of time.</p>
+        <p>148A. Right to lodge a caveat.</p>
+        <p>149. Power to make up deficiency of court-fees.</p>
+        <p>150. Transfer of business.</p>
+        <p>151. Saving of inherent powers of Court.</p>
+        <p>152. Amendment of judgments, decrees or orders.</p>
+        <p>153. General power to amend.</p>
+        <p>153A. Power to amend decree or order where appeal is summarily dismissed.</p>
+        <p>153B. Place of trial to be deemed to be open Court.</p>
+        <p>154. [Repealed.].</p>
+        <p>155. [Repealed.].</p>
+        <p>156. [Repealed.].</p>
+        <p>157. Continuance of orders under repealed enactments.</p>
+        <p>158. Reference to Code of Civil Procedure and other repealed enactments.</p>
+        
+
+        <!-- Add more sections here -->
+    </div>
+</div>
+
+<script>
+document.getElementById('searchButton').addEventListener('click', function() {
+    performSearch();
+});
+
+document.getElementById('searchInput').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        performSearch();
+    }
+});
+
+function performSearch() {
+    var searchQuery = document.getElementById('searchInput').value.toLowerCase();
+    var paragraphs = document.querySelectorAll('#textToSearch p');
+    paragraphs.forEach(function(para) {
+        para.innerHTML = para.textContent; // Reset paragraph content
+        var textToSearch = para.innerText.toLowerCase();
+        var regex = new RegExp('\\b' + searchQuery.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&') + '\\b', 'gi');
+        var matches = textToSearch.match(regex);
+        if (matches) {
+            matches.forEach(function(match) {
+                var highlightedMatch = '<span class="highlight">' + match + '</span>';
+                textToSearch = textToSearch.replace(match, highlightedMatch);
+            });
+            para.innerHTML = textToSearch; // Update paragraph content with highlights
+            // Scroll to the paragraph containing the matched word
+            para.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    });
+}
+</script>
+
+</body>
+</html>
